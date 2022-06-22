@@ -1,0 +1,11 @@
+
+*.pickle
+
+.DS_STORE
+
+/static/uploads
+
+__pycache__/
+
+*.pkl
+

@@ -29,7 +29,7 @@ model = tensorflow.keras.Sequential([
 # this gives the summary of our resnet model
 print(model.summary)
 
-imag = image.load_img('/Users/rohittiwari/Documents/bodega-products (2)/images/1529.jpg',target_size=(224,224))       #from the prerpocessing we uses image to load images
+imag = image.load_img('/Users/yashwalia/Desktop/archive/images/1529.jpg',target_size=(224,224))       #from the prerpocessing we uses image to load images
 imag_array = image.img_to_array(imag)          # convert image file into numpy array formate
 print(imag_array)
 print('shape of image is: ',imag_array.shape)
@@ -64,8 +64,8 @@ def extract_feature(image_path, model):
 
 # create a list of filenames with the required path
 filenames = []
-for file in os.listdir('/Users/rohittiwari/Documents/bodega-products (2)/images'):
-    filenames.append(os.path.join('/Users/rohittiwari/Documents/bodega-products (2)/images',file))
+for file in os.listdir('/Users/yashwalia/Desktop/archive/images'):
+    filenames.append(os.path.join('/Users/yashwalia/Desktop/archive/images',file))
 
 
 # create a list of features name
